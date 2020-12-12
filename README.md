@@ -84,7 +84,8 @@ xterm -T TULUNGAGUNG -e linux ubd0=TULUNGAGUNG,jarkom umid=TULUNGAGUNG eth0=daem
 xterm -T LUMAJANG -e linux ubd0=LUMAJANG,jarkom umid=LUMAJANG eth0=daemon,,,switch14 mem=64M &
 ```
 
-lalu lakukan bash topology.sh tersebut dan setting interface untuk masing-masing UML
+lalu lakukan bash topology.sh tersebut dan ubah settingan pada router menjadi `net.ipv4.ip_forward=1` agar bisa meneruskan routing. 
+Setelah itu setting interface untuk masing-masing UML
 
 ### Interface pada ROUTER
 #### SURABAYA
@@ -352,7 +353,9 @@ gateway 10.151.83.69
 
 ```
 
-Setelah melakukan setting interface, lakukan network restart dan tahap selanjutnya adalah setting routingnya.
+Setelah melakukan setting interface, lakukan network restart dan pada surabaya lakukan iptables `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16`
+
+tahap selanjutnya adalah setting routingnya.
 
 ### ROUTING
 Routing dilakukan pada surabaya, batu, kediri, dan pasuruan
