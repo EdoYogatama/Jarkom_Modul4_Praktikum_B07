@@ -28,7 +28,7 @@ Total | 5840 | /19
 
 ![Dibagi bagi pake tree](images/vlsm_hirarki.png)
 Subnet  | Jumlah IP | Netmask | IP
--   | -     | -     | -
+-----   | -     | -     | -
 A1  | 721   | /22   | 192.168.20.0/22
 A2  | 12    | /28   | 192.168.0.112/28
 A3  | 502   | /23   | 192.168.2.0/23
