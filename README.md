@@ -48,7 +48,7 @@ Total | 5840 | /19
 ![Topology di Cisco Packet Tracer](images/cpt_topology.png)
 ## UML (CIDR)
 ### Pembagian dan perhitungan subnet
-![Gambar bunderin subnet](images/cidr.png)
+![Gambar bunderin subnet](images/cidr.jpg)
 
 ### Setting topology.sh
 berikut adalah isi dari topology.sh
